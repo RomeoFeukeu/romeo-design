@@ -1,10 +1,18 @@
 
-let nav = document.querySelector('nav');
+let navbar = document.querySelector('nav');
+
+let menulinks = document.getElementById('menu-Links');
+
+
+function toggleMenu() {
+  menulinks.classList.toggle('show-menu');
+}
+
 window.onscroll = function() {
   if (window.scrollY > 0) {
-    nav.style.backgroundColor = 'rgba(254, 254, 254, 0.9)';
+    navbar.style.background = 'rgba(45, 44, 44, 0.9)';
     
   } else {
-    nav.style.backgroundColor = 'transparent';
+    navbar.style.backgroundColor = 'transparent';
   }
-};
+}
